@@ -1,0 +1,74 @@
+.btn_run a{
+margin:2px;
+width:80px;height:25px;
+display:block;
+position:absolute;
+background:url(../images/btn_run.gif) no-repeat top left;
+line-height:25px;
+text-align:center;
+font-size:100%;
+color:#000000 !important;
+}
+.btn_run a:hover{background:url(../images/btn_run.gif) no-repeat 0 -25px;}
+.btn_run a:active{border:none;}
+#resultData{position:relative;}
+.ajax-loader{height:100%;}
+.ajax-loader img{position:absolute;top:40%;left:45%;}
+
+#resultData span{
+    display:block;
+    text-align:left;
+	padding:10px;
+	font-size:116%;
+}
+#resultData table{border-collapse: collapse;}
+#resultData table th{
+	border:1px solid #666666;
+	background-color:#cccccc;
+	font-weight:bold;
+	font-size:93%;
+	padding:5px;
+    white-space:nowrap;	
+}	
+#resultData table tr.kisu td{
+	border:1px solid #666666;
+	background-color:#ffffff;
+	font-size:93%;
+	padding:5px;
+}
+#resultData table tr.gusu td{
+	border:1px solid #666666;
+	background-color:#e5edfe;
+	font-size:93%;
+	padding:5px;
+}
+#left1 a{font-size:93%;}
+#left1 a,
+#left1 a:visited{color:#0000ff;}
+#left1 a:hover{color:#ff0000;}
+
+#tableSql{position:relative;}
+#tableSql textarea{
+	display:block;
+	width:100%;
+	height:200px;
+	font-size:100%;
+	font-family: "MS Gothic","ÇlÇr ÉSÉVÉbÉN", "OsakaÅ|ìôïù" !important;
+	line-height:110% !important;
+}
+
+
+/* global style */
+.yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-bd-nohd,
+.yui-skin-sam .yui-layout-unit div.yui-layout-bd-noft,
+.yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-bd,
+.yui-skin-sam .yui-layout {
+	border-style:none !important;
+	background-color:#ffffff;
+}
+
+.btn_base1{height:25px !important;}
+.ygtvspacer{width:18px !important;}
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+	color:#000000 !important;
+}

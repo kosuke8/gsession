@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <File name="file" fileName="test.log">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </File>
+  </Appenders>
+  <Loggers>
+    <!-- jp.groupsession のロガーの設定 -->
+    <Logger name="jp.groupsession.v2" level="info">
+      <AppenderRef ref="file"/>
+    </Logger>
+    <Logger name="jp.groupsession.v2.cmn" level="error">
+      <AppenderRef ref="file"/>
+    </Logger>
+    <Logger name="jp.groupsession.v2.tcd.dao" level="error">
+      <AppenderRef ref="file"/>
+    </Logger>
+    <!-- ルートロガーの設定 -->
+    <Root level="info">
+      <AppenderRef ref="console"/>
+    </Root>
+  </Loggers>
+</Configuration>
